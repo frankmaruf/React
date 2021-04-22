@@ -3,6 +3,9 @@ import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 
 export const CreateNote = (props) => {
+
+    const [expend, setExpend] = useState(false);
+
     const [note, setNote] = useState({
         title: "",
         content: "",
@@ -27,15 +30,23 @@ export const CreateNote = (props) => {
             content: "",
         });
     };
+    const expandIt = () =>{
+        setExpend(true);
+    }
+    const getNormal = () =>{
+        setExpend(false);
+    }
     return(
         <React.Fragment>
-            <div className="main_note">
+            <div className="main_note" onDoubleClick={getNormal}>
                 <form>
-                    <input type="text" name="title" value={note.title} onChange={inputEvent} placeholder="Title" autoComplete="off"/>
-                    <textarea rows="" cols=""  name = "content" value={note.content} onChange={inputEvent} placeholder="Write A Note here...."/>
-                    <Button onClick={addEvent}>
+                
+                    {
+                       expend ? <input type="text" name="title" value={note.title} onChange={inputEvent} placeholder="Title" autoComplete="off"/>: null}
+                    <textarea rows="" cols=""  name = "content" value={note.content} onChange={inputEvent} onClick={expandIt}  placeholder="Write A Note here...."/>
+                    {expend? <Button onClick={addEvent}>
                     <AddIcon className="plus_sign"/>
-                    </Button>
+                    </Button> : null}
                 </form>
             </div>
         </React.Fragment>

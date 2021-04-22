@@ -13,8 +13,12 @@ const App = () => {
         return [...preValue,note]
     })
     console.log(note);
-        
-    }
+    };
+    const onDelete = (id) => {
+        setAddItem((oldData)=>oldData.filter((currentdata,index)=>{
+            return index !== id;
+        }))
+    }  
     return(
         <React.Fragment>
             <Header/>
@@ -27,10 +31,12 @@ const App = () => {
                     key={index}
                     id={index}
                     title={val.title}
-                    content = {val.content}/>
+                    content = {val.content}
+                    deleteItem={onDelete}
+                    />
                 })
             }
-            <Footer/>
+            {/* <Footer/> */}
         </React.Fragment>
     )
 }
