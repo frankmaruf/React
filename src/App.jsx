@@ -1,42 +1,20 @@
-import React, { useState } from "react";
-import { CreateNote } from "./components/GoogleKeep/CreateNote";
-import { Footer } from "./components/GoogleKeep/Footer";
-import { Header } from "./components/GoogleKeep/Header";
-import { Note } from "./components/GoogleKeep/Note";
-import "./SASS/CloneKeep.scss"
+import React, { createContext } from "react";
+import {CompA} from "./components/ContextAPI/CompA"
+// import {CompB} from "./components/ContextAPI/CompB"
+// import {CompC} from "./components/ContextAPI/CompC"
 // import "./SASS/Test.scss"
 
+export const FirstName = createContext();
+export const LastName = createContext();
 const App = () => {
-    const [addItem, setAddItem] = useState([]);
-    const addNote = (note) => {
-        setAddItem((preValue)=>{
-        return [...preValue,note]
-    })
-    console.log(note);
-    };
-    const onDelete = (id) => {
-        setAddItem((oldData)=>oldData.filter((currentdata,index)=>{
-            return index !== id;
-        }))
-    }  
+      
     return(
         <React.Fragment>
-            <Header/>
-            <CreateNote
-                passNote={addNote}
-            />
-            {
-                addItem.map((val,index)=>{
-                    return <Note
-                    key={index}
-                    id={index}
-                    title={val.title}
-                    content = {val.content}
-                    deleteItem={onDelete}
-                    />
-                })
-            }
-            {/* <Footer/> */}
+            <FirstName.Provider value={"Abdullah Al"}>
+                <LastName.Provider value={"Maruf(Akash)"}>
+                <CompA/>
+                </LastName.Provider>
+            </FirstName.Provider>
         </React.Fragment>
     )
 }

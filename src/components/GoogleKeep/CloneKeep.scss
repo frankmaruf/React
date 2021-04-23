@@ -1,3 +1,5 @@
+$main-color : #22f806;
+$sub-color: #13f597;
 *{
     box-sizing: border-box;
     padding: 0;
@@ -26,7 +28,7 @@
         background: transparent;
         cursor: pointer;
         &:hover{
-            background-color: #f5ba13 ;
+            background-color: $sub-color ;
             .deleteIcon{
                 color: #fff;
             }
@@ -96,7 +98,7 @@ form{
     box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
     border-radius: 50% !important;
     &:hover{
-        background: #f4b400 im !important;
+        background: $main-color im !important;
         .plus_sign{
             color: #fff;
             background: transparent;
@@ -105,7 +107,7 @@ form{
     .plus_sign{
         font-size: 45px !important;
         font-weight: 900;
-        color: #f4b400;
+        color: $main-color;
         cursor: pointer;
         z-index: 222;
         background: transparent;
@@ -114,7 +116,7 @@ form{
 .plus_sign{
     font-size: 45px !important;
     font-weight: 900;
-    color: #f4b400;
+    color: $main-color;
     cursor: pointer;
     z-index: 222;
     background: transparent;
@@ -135,7 +137,7 @@ form{
 .header{
     width: 100%;
     line-height: 100px;
-    background-color: #f5ba13;
+    background-color: $sub-color;
     display: flex;
     justify-content: start;
     align-items: center;
