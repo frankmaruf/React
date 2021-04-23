@@ -1,20 +1,13 @@
-import React, { createContext } from "react";
-import {CompA} from "./components/ContextAPI/CompA"
-// import {CompB} from "./components/ContextAPI/CompB"
-// import {CompC} from "./components/ContextAPI/CompC"
+import React from "react";
+import { UseEffectAPI } from "./components/Hook/UseEffectAPI";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 // import "./SASS/Test.scss"
 
-export const FirstName = createContext();
-export const LastName = createContext();
+
 const App = () => {
-      
     return(
         <React.Fragment>
-            <FirstName.Provider value={"Abdullah Al"}>
-                <LastName.Provider value={"Maruf(Akash)"}>
-                <CompA/>
-                </LastName.Provider>
-            </FirstName.Provider>
+            <UseEffectAPI/>
         </React.Fragment>
     )
 }

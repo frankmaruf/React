@@ -1,5 +1,6 @@
 import React from "react"
 import { FirstName, LastName } from "../../App"
+
 export const CompC =() =>{
     return(
         <>
