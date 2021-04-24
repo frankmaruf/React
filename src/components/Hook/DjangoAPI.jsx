@@ -25,7 +25,7 @@ export const DjangoAPI = () => {
 
     return(
         <React.Fragment>
-            <h1>List of GitHub Users</h1>
+            <h1>Students List:</h1>
             <div className="container-fluid mt-5">
                 <div className='row text-center'>
 
