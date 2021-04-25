@@ -1,9 +1,9 @@
 import React from 'react'
 
-const About = () => {
+const About = (props) => {
     return (
         <React.Fragment>
-            <h1>Hello from About</h1>
+            <h1>Hello, This is about {props.name}</h1>
         </React.Fragment>
     )
 }

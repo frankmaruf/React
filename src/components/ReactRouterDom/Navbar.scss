@@ -3,3 +3,11 @@ a.active_class{
     border-bottom: 1px solid red;
     background-color: gray;
 }
+
+.menu_style{
+    width: 100%;
+    line-height: 60px;
+    background-color: #20232a;
+    display: flex;
+    justify-content: space-around;
+}
