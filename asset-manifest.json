@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/react/static/css/main.97377b9a.chunk.css",
+    "main.js": "/react/static/js/main.13e10f00.chunk.js",
+    "main.js.map": "/react/static/js/main.13e10f00.chunk.js.map",
+    "runtime-main.js": "/react/static/js/runtime-main.e9a68011.js",
+    "runtime-main.js.map": "/react/static/js/runtime-main.e9a68011.js.map",
+    "static/css/2.78afd4a5.chunk.css": "/react/static/css/2.78afd4a5.chunk.css",
+    "static/js/2.741e8f2a.chunk.js": "/react/static/js/2.741e8f2a.chunk.js",
+    "static/js/2.741e8f2a.chunk.js.map": "/react/static/js/2.741e8f2a.chunk.js.map",
+    "index.html": "/react/index.html",
+    "static/css/2.78afd4a5.chunk.css.map": "/react/static/css/2.78afd4a5.chunk.css.map",
+    "static/css/main.97377b9a.chunk.css.map": "/react/static/css/main.97377b9a.chunk.css.map",
+    "static/js/2.741e8f2a.chunk.js.LICENSE.txt": "/react/static/js/2.741e8f2a.chunk.js.LICENSE.txt",
+    "static/media/AI.ce7f8d20.jpeg": "/react/static/media/AI.ce7f8d20.jpeg",
+    "static/media/Android_Development.0267af92.png": "/react/static/media/Android_Development.0267af92.png",
+    "static/media/Arduino.cc5cd955.png": "/react/static/media/Arduino.cc5cd955.png",
+    "static/media/IoT.ebf40cb3.jpg": "/react/static/media/IoT.ebf40cb3.jpg",
+    "static/media/ML.5d69e491.jpg": "/react/static/media/ML.5d69e491.jpg",
+    "static/media/Web_development.ba4d33e1.png": "/react/static/media/Web_development.ba4d33e1.png",
+    "static/media/demo.b9100b00.svg": "/react/static/media/demo.b9100b00.svg",
+    "static/media/demo_1.3150c426.jpg": "/react/static/media/demo_1.3150c426.jpg",
+    "static/media/software_development.4d588785.png": "/react/static/media/software_development.4d588785.png",
+    "static/media/video_editor.144fe71e.jpg": "/react/static/media/video_editor.144fe71e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9a68011.js",
+    "static/css/2.78afd4a5.chunk.css",
+    "static/js/2.741e8f2a.chunk.js",
+    "static/css/main.97377b9a.chunk.css",
+    "static/js/main.13e10f00.chunk.js"
+  ]
+}
