@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Cuprum&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cuprum",sans-serif;
+}
+
+
+
+%common{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: 9rem;
+}
+.setStyle{
+    background-color: #99b898;
+    color: #feceab;
+    text-shadow: 1px 2px 3px firebrick;
+    @extend %common;
+}
+.setStyle2{
+    text-shadow: 1px 2px 3px #01a9b4;
+    background-color: #01a9b4;
+    color: #086972;
+    @extend %common;
+}
+.setStyle3{
+    text-shadow: 1px 2px 3px #e5cfe5;
+    background-color: #3b6978;
+    color: #a6dcef;
+    @extend %common;
+}
+.setStyle4{
+    text-shadow: 1px 2px 3px #88dbb9;
+    background-color: #b3d67a;
+    color: #5c4152;
+    @extend %common;
+}
+.mainMenu{
+    width: 100%;
+    line-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e84a5f;
+    color: #ff847c;
+    a{
+        color: #092532;
+        font-size: 3rem;
+
+
+    .menu_link{
+        color: #feceab;
+        font-size: 3rem;
+    }    
+
+    }
+}
+
+
+
+@media (max-width:768){
+    .setStyle,
+    .setStyle2,
+    .setStyle3{
+        height: 80vh;
+    }
+    .setStyle,.setStyle2,.setStyle3{
+        p{
+            font-size: 3rem;
+        }
+        h1{
+            font-size: 5rem;
+        }
+    }
+    .mainMenu{
+        display: block;
+    a{
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        border-bottom: 2px solid black;
+    }
+    }
+
+}

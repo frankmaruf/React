@@ -1,7 +1,6 @@
 import React from "react";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import Main from "./components/ReactRouterDom/Main";
-// import "./SASS/Test.scss"
+import Main from "./portfolio_website/Main";
+import "./portfolio_website/index.scss"
 
 const App = () => {
     return(

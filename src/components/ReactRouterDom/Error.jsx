@@ -1,11 +1,16 @@
 import React from 'react'
-
-function Error() {
+import {NavLink} from 'react-router-dom'
+const Error = () => {
     return (
-    <React.Fragment>
-        <h1>Wrong Page Entered</h1>
-    </React.Fragment>
+        <React.Fragment>
+            <div className="setStyle3">
+                <h1>Error</h1>
+                <p>404</p>
+                <NavLink to="/">Go Back</NavLink>
+            </div>
+
+        </React.Fragment>
     )
 }
 
-export default Error
+export default Error;

@@ -17,9 +17,10 @@ function Users() {
     console.log(history)
     return (
         <React.Fragment>
-            <h1>Hello User {fname} {lname}</h1>
+            <h3>Hello User {fname} {lname}</h3>
             <p>My location is {loaction.pathname}</p>
             {loaction.pathname===`/user/maruf` ? <button onClick={()=>(history.push("/"))}>Home Page</button>:null}
+            
         </React.Fragment>
     )
 }
